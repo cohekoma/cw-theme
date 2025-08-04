@@ -1,0 +1,65 @@
+/*
+Theme Name: CW Theme
+Theme URI: https://dev.quantratruocnha.com
+Author: Chan Dinh
+Author URI: http://example.com
+Description: CW theme is a WordPress theme that can be used with Elementor
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: cw-theme
+*/
+
+
+.cwea-single-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 30px 0;
+}
+.cwea-product-images img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+.cwea-gallery-thumbs {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.cwea-gallery-thumbs img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.cwea-product-info h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.cwea-product-info .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+.cwea-related-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 15px;
+}
+.cwea-related-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+}
+.cwea-related-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .cwea-single-product {
+        grid-template-columns: 1fr;
+    }
+}
